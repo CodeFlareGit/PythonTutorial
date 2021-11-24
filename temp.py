@@ -21,5 +21,3 @@ print(populations)
 
 populations = list(filter((2000).__ne__, populations))
 print(populations)
-
-print(test2)
