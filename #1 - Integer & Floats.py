@@ -1,16 +1,14 @@
-#Integers & Floating Point Numbers
+#--------Integers--------#
+pizza_slices = 1000000
+print("We have sold", pizza_slices, "pizza slices this year!")
 
-i = int(3)
-print(i)
+#--------Floating Point--------#
+cost_per_slice = 1.25     #Cost per pizza slice
+sales_tax = .093125       #Sales tax - 9.3125%
 
-i = int(4)
-d = int(3)
-print(int(i/d))
-print(i/d)
+#--------Formulas--------#
+pizza_gross = pizza_slices * cost_per_slice #calcualte pizza cost
+sales_tax_cost = sales_tax*(pizza_slices*cost_per_slice) #calcuate sales tax
+pizza_net = pizza_gross - sales_tax_cost #calcuate our net cost
 
-z = 1.5151
-print(z)
-print(type(z))
-
-v = 5
-print( type(v))
+print("This results in a net gain of: $", pizza_net)
